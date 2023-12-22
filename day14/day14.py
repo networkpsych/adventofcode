@@ -49,6 +49,7 @@ def part_two():
 
     while True:
         if d in {0, 2}:
+            # South Tilt
             if d == 2:
                 beams.reverse()
             else:
@@ -69,6 +70,7 @@ def part_two():
                         states = None
                     else:
                         states[_new] = cycles
+            # North Tilt
             for idx, beam in enumerate(beams):
                 for col in range(len(beam)):
                     pos = beams[idx][col]  # get the current position
@@ -85,7 +87,7 @@ def part_two():
             if d == 2:
                 beams.reverse()
 
-        # process the east & west tilting
+        #  East & West tilting
         elif d == 1:
             for col in range(len(beams[0])):
                 for idx in range(len(beams)):
