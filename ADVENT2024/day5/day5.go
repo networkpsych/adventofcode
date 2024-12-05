@@ -76,7 +76,7 @@ func Validate(f [][]int, line []int) bool {
 }
 
 func ReOrder(f [][]int, line []int, idx int) []int {
-	// this is a very stupid insertion algo.
+	// this is a very stupid algo.
 	copy := line
 	for !Validate(f, copy) {
 		for _, rule := range f {
@@ -92,8 +92,6 @@ func ReOrder(f [][]int, line []int, idx int) []int {
 	}
 	return copy
 }
-
-//return copy
 
 func PartOne(f [][]int, s [][]int) {
 	total := 0
