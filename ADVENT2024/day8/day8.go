@@ -59,7 +59,7 @@ func main() {
 		}
 	}
 
-	//PartOne(pchart, ta)
+	PartOne(pchart, ta1)
 	PartTwo(pchart, ta)
 
 }
